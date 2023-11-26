@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "San Francisco";
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.header {
+    display: flex;
+}
+nav {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+.apple-logo {
+    height: 50px;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 80vw;
+}
+.nav-item .nav-icon {
+    margin-top: 2vh;
+    font-size: 20px;
+    color: white;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: white;
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.imac-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imac-1-text {
+    font-size: 40px;
+    text-align: center;
+}
+.imac-1-text span {
+    background: #29CF00;
+    background: repeating-linear-gradient(to left, orange, red, blue);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.page1 p {
+    font-weight: 900;
+}
+.box-1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+.box-2 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 15px;
+}
+.box-2-text {
+    display: flex;
+    flex-direction: column;
+}
+.box-2-text button {
+    padding: 0.5vw;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.box-3 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 15px;
+}
+.box-3-text-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-3-text-2 img {
+    width: 5vw;
+    margin-bottom: 10px;
+}

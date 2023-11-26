@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @font-face {
+            font-family: "San Francisco";
+            font-weight: 700;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .image-container {
+            flex: 75%;
+            background: url('./src/Logic-Logo.jpg');
+            background-size: cover;
+            background-position: top;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            /* flex: 25%; */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            width: 100%;
+            max-width: 300px;
+        }
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            outline: none;
+            border: 2px solid black;
+        }
+        p {
+            text-align: left;
+            font-size: 12px;
+            padding-top: 0px;
+            padding-bottom: 1px;
+        }
+        button {
+            width: 22vw;
+            padding: 1vw;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="form-container">
+            <form>
+				<h1>Sign in for faster checkout.</h1><br><br><br>
+                <h2>Sign in to Apple Store</h2>
+                <input class="input" type="text" placeholder="Email" required>
+                <input class="input" type="password" placeholder="Password" required>
+				<a href="#"><p>Forgot your password?</p></a>
+            </form>
+            <a href="index.html"><button>Login</button></a>
+        </div>
+    </div>
+</body>
+</html>
